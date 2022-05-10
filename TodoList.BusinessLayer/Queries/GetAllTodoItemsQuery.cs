@@ -6,6 +6,5 @@ namespace TodoList.BusinessLayer.Queries
 {
     public class GetAllTodoItemsQuery : IRequest<IEnumerable<TodoItemResponse>>
     {
-
     }
 }

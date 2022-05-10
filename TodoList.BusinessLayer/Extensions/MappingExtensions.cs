@@ -6,11 +6,6 @@ namespace TodoList.BusinessLayer
     public static class MappingExtensions
     {
         public static TodoItemResponse ToDto(this TodoItem todoItem)
-            => new TodoItemResponse
-            {
-                Id = todoItem.Id,
-                IsComplete = todoItem.IsComplete,
-                Name = todoItem.Name
-            };
+            => new TodoItemResponse(todoItem.Id, todoItem.Name, todoItem.IsComplete);
     }
 }

@@ -13,6 +13,7 @@ namespace TodoList.Api.Controllers
     public class TodoItemsController : ControllerBase
     {
         private readonly IMediator _mediator;
+        
         public TodoItemsController(IMediator mediator)
         {
             _mediator = mediator;

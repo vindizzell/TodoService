@@ -14,7 +14,7 @@ namespace TodoList.BusinessLayer.Commands.Handlers
         public CreateTodoItemHandler(IRepository<TodoItem> repository)
             => _repository = repository;
 
-        public async Task<TodoItemResponse> Handle(CreateTodoItemCommand command, CancellationToken cancellationToken)
+        public async Task<TodoItemResponse> Handle(CreateTodoItemCommand command, CancellationToken cancellationToken = default)
         {
             var todoItem = new TodoItem
             {

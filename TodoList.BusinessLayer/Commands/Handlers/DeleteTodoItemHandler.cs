@@ -13,7 +13,7 @@ namespace TodoList.BusinessLayer.Commands.Handlers
         public DeleteTodoItemHandler(IRepository<TodoItem> repository)
             => _repository = repository;
 
-        public async Task<Unit> Handle(DeleteTodoItemCommand command, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(DeleteTodoItemCommand command, CancellationToken cancellationToken = default)
         {
             var todoItem = await _repository.GetAsync(command.Id);
 

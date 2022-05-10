@@ -15,7 +15,7 @@ namespace TodoList.BusinessLayer.Commands.Handlers
         public UpdateTodoItemHandler(IRepository<TodoItem> repository)
             => _repository = repository;
         
-        public async Task<Unit> Handle(UpdateTodoItemCommand command, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(UpdateTodoItemCommand command, CancellationToken cancellationToken = default)
         {
             var todoItem = await _repository.GetAsync(command.Id);
             
