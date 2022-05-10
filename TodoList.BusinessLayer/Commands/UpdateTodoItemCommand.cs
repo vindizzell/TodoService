@@ -2,7 +2,7 @@
 
 namespace TodoList.BusinessLayer.Commands
 {
-    public class UpdateTodoItemCommand : IRequest<Unit>
+    public sealed class UpdateTodoItemCommand : IRequest<Unit>
     {
         public long Id { get; set; }
         public string Name { get; set; }

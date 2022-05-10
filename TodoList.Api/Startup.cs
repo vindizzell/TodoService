@@ -33,8 +33,8 @@ namespace TodoList.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwaggerUi();
             }
+            app.UseSwaggerUi();
 
             app.UseHttpsRedirection();
 

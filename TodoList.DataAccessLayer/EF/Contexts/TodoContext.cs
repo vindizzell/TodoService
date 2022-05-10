@@ -4,7 +4,7 @@ using TodoList.DataAccessLayer.EF.Model;
 
 namespace TodoList.DataAccessLayer.EF.Contexts
 {
-    public class TodoContext : DbContext
+    internal class TodoContext : DbContext
     {
         public DbSet<TodoItem> TodoItems { get; set; }
 

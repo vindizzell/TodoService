@@ -1,7 +1,7 @@
 using TodoList.BusinessLayer.Model;
 using TodoList.DataAccessLayer.EF.Model;
 
-namespace TodoList.BusinessLayer
+namespace TodoList.BusinessLayer.Extensions
 {
     public static class MappingExtensions
     {

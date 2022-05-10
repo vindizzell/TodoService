@@ -1,13 +1,14 @@
 ﻿using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
+using TodoList.BusinessLayer.Extensions;
 using TodoList.BusinessLayer.Model;
 using TodoList.DataAccessLayer.EF.Model;
 using TodoList.DataAccessLayer.EF.Repositories;
 
 namespace TodoList.BusinessLayer.Queries.Handlers
 {
-    public class GetTodoItemByIdHandler : IRequestHandler<GetTodoItemByIdQuery, TodoItemResponse>
+    internal sealed class GetTodoItemByIdHandler : IRequestHandler<GetTodoItemByIdQuery, TodoItemResponse>
     {
         private readonly IRepository<TodoItem> _repository;
 

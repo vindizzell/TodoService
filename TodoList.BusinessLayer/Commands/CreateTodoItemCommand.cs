@@ -3,7 +3,7 @@ using TodoList.BusinessLayer.Model;
 
 namespace TodoList.BusinessLayer.Commands
 {
-    public class CreateTodoItemCommand : IRequest<TodoItemResponse>
+    public sealed class CreateTodoItemCommand : IRequest<TodoItemResponse>
     {
         public string Name { get; set; }
         public bool IsComplete { get; set; }

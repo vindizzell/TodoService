@@ -1,6 +1,6 @@
 namespace TodoList.DataAccessLayer.EF.Options
 {
-    public class SqlServerSettings
+    internal class SqlServerSettings
     {
         public string ConnectionString { get; set; }
     }

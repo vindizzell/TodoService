@@ -4,7 +4,7 @@ using TodoList.BusinessLayer.Model;
 
 namespace TodoList.BusinessLayer.Queries
 {
-    public class GetAllTodoItemsQuery : IRequest<IEnumerable<TodoItemResponse>>
+    public sealed class GetAllTodoItemsQuery : IRequest<IEnumerable<TodoItemResponse>>
     {
     }
 }

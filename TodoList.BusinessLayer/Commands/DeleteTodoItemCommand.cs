@@ -2,7 +2,7 @@
 
 namespace TodoList.BusinessLayer.Commands
 {
-    public class DeleteTodoItemCommand : IRequest
+    public sealed class DeleteTodoItemCommand : IRequest
     {
         public long Id { get; set; }
 

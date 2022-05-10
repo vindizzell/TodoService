@@ -6,7 +6,7 @@ using TodoList.DataAccessLayer.EF.Repositories;
 
 namespace TodoList.BusinessLayer.Commands.Handlers
 {
-    public class DeleteTodoItemHandler : IRequestHandler<DeleteTodoItemCommand>
+    internal sealed class DeleteTodoItemHandler : IRequestHandler<DeleteTodoItemCommand>
     {
         private readonly IRepository<TodoItem> _repository;
 

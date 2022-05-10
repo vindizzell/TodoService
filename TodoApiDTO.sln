@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.BusinessLayer", "T
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Tests", ".Tests", "{5B3C4F4C-D04F-4264-BCB8-4027E29E0C31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.BusinessLayer.Tests", "..\TodoList.BusinessLayer.Tests\TodoList.BusinessLayer.Tests.csproj", "{FEE8850C-D56A-4275-990B-C50CFBF5B9DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.BusinessLayer.Tests", "TodoList.BusinessLayer.Tests\TodoList.BusinessLayer.Tests.csproj", "{D8C736A9-105D-41A4-A742-34724EF901AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,18 +31,18 @@ Global
 		{E91974DB-3FA1-4106-A2E3-29973C0FAD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E91974DB-3FA1-4106-A2E3-29973C0FAD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E91974DB-3FA1-4106-A2E3-29973C0FAD5B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FEE8850C-D56A-4275-990B-C50CFBF5B9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FEE8850C-D56A-4275-990B-C50CFBF5B9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FEE8850C-D56A-4275-990B-C50CFBF5B9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FEE8850C-D56A-4275-990B-C50CFBF5B9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C736A9-105D-41A4-A742-34724EF901AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C736A9-105D-41A4-A742-34724EF901AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C736A9-105D-41A4-A742-34724EF901AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C736A9-105D-41A4-A742-34724EF901AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FEE8850C-D56A-4275-990B-C50CFBF5B9DA} = {5B3C4F4C-D04F-4264-BCB8-4027E29E0C31}
+		{D8C736A9-105D-41A4-A742-34724EF901AC} = {5B3C4F4C-D04F-4264-BCB8-4027E29E0C31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {60984BC9-01D1-4B40-9733-E459B1231F96}
+		SolutionGuid = {CA3407F4-7F3A-47A3-81C5-0B8C9574680B}
 	EndGlobalSection
 EndGlobal

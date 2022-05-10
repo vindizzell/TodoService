@@ -8,7 +8,7 @@ using TodoList.DataAccessLayer.EF.Repositories;
 
 namespace TodoList.BusinessLayer.Commands.Handlers
 {
-    public class UpdateTodoItemHandler : IRequestHandler<UpdateTodoItemCommand>
+    internal sealed class UpdateTodoItemHandler : IRequestHandler<UpdateTodoItemCommand>
     {
         private readonly IRepository<TodoItem> _repository;
 

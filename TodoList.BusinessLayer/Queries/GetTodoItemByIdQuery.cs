@@ -3,7 +3,7 @@ using TodoList.BusinessLayer.Model;
 
 namespace TodoList.BusinessLayer.Queries
 {
-    public class GetTodoItemByIdQuery : IRequest<TodoItemResponse>
+    public sealed class GetTodoItemByIdQuery : IRequest<TodoItemResponse>
     {
         public long Id { get; set; }
 

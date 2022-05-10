@@ -4,7 +4,7 @@ using TodoList.DataAccessLayer.EF.Model;
 
 namespace TodoList.DataAccessLayer.EF.Configuration
 {
-    public class TodoItemConfiguration : IEntityTypeConfiguration<TodoItem>
+    internal class TodoItemConfiguration : IEntityTypeConfiguration<TodoItem>
     {
         public void Configure(EntityTypeBuilder<TodoItem> builder)
         {
