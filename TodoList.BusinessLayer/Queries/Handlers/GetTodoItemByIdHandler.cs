@@ -15,9 +15,9 @@ namespace TodoList.BusinessLayer.Queries.Handlers
         public GetTodoItemByIdHandler(IRepository<TodoItem> repository)
             => _repository = repository;
 
-        public async Task<TodoItemResponse> Handle(GetTodoItemByIdQuery request, CancellationToken cancellationToken = default)
+        public async Task<TodoItemResponse> Handle(GetTodoItemByIdQuery query, CancellationToken cancellationToken = default)
         {
-            var todoItem = await _repository.GetAsync(request.Id);
+            var todoItem = await _repository.GetAsync(query.Id);
             return todoItem == null ? null : todoItem.ToDto();
         }
     }

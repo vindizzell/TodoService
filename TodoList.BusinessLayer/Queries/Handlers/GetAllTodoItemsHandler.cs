@@ -17,7 +17,7 @@ namespace TodoList.BusinessLayer.Queries.Handlers
         public GetAllTodoItemsHandler(IRepository<TodoItem> repository)
             => _repository = repository;
 
-        public async Task<IEnumerable<TodoItemResponse>> Handle(GetAllTodoItemsQuery request, CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<TodoItemResponse>> Handle(GetAllTodoItemsQuery query, CancellationToken cancellationToken = default)
             => (await _repository.GetAsync()).Select(ti => ti.ToDto());
     }
 }
